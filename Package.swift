@@ -13,9 +13,9 @@ let package = Package(
     targets: [
         .target(name: "YogaLayout", 
                 path: "Sources",
-                publicHeadersPath: "../Sources",
+                publicHeadersPath: "Sources/publicHeader",
                 cSettings: [
-                    .headerSearchPath("Sources")
+                    .headerSearchPath("Sources/publicHeader")
                 ])
     ],
     swiftLanguageVersions: [
