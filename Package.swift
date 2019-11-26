@@ -20,5 +20,5 @@ let package = Package(
     swiftLanguageVersions: [
         .version("5")
     ],
-    cxxLanguageStandard: .gnucxx11
+    cxxLanguageStandard: .cxx14
 )
