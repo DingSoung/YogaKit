@@ -1,6 +1,6 @@
 framework module FlexLayout {
-    umbrella header "YGValue.h"
-    umbrella header "YGEnums.h"
-    umbrella header "Yoga.h"
-    umbrella header "YGMacros.h"
+    header "YGValue.h"
+    header "YGEnums.h"
+    header "Yoga.h"
+    header "YGMacros.h"
 }
