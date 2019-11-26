@@ -1,24 +1,13 @@
 // swift-tools-version:5.1
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "YogaLayout",
-    platforms: [
-        .iOS(.v8)
-    ],
-    products: [
-        .library(name: "YogaLayout", targets: ["YogaLayout"])
-    ],
-    targets: [
-        .target(name: "YogaLayout", 
-                path: "Sources",
-                publicHeadersPath: "../Sources/publicHeader"
-                //cSettings: [ .headerSearchPath("Sources") ]
-            )
-    ],
-    swiftLanguageVersions: [
-        .version("5")
-    ],
-    cxxLanguageStandard: .cxx14
+    name: "Yoga",
+    pkgConfig: "libgit2",
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        // .package(url: /* package url */, from: "1.0.0"),
+    ]
 )
