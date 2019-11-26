@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(name: "YogaLayout", 
                 path: "Sources",
-                publicHeadersPath: "Sources/publicHeader",
+                publicHeadersPath: "Sources",
                 cSettings: [
                     .headerSearchPath("Sources")
                 ])
