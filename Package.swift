@@ -15,7 +15,7 @@ let package = Package(
                 path: "Sources",
                 publicHeadersPath: "Sources/publicHeader",
                 cSettings: [
-                    .headerSearchPath("Sources/publicHeader")
+                    .headerSearchPath("Sources")
                 ])
     ],
     swiftLanguageVersions: [
