@@ -12,8 +12,8 @@ let package = Package(
     ],
     targets: [
         .target(name: "YogaLayout", 
-                path: "Sources"//,
-                //publicHeadersPath: "Sources",
+                path: "Sources",
+                publicHeadersPath: "../Sources"
                 //cSettings: [ .headerSearchPath("Sources") ]
             )
     ],
