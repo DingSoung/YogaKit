@@ -12,11 +12,10 @@ let package = Package(
     ],
     targets: [
         .target(name: "YogaLayout", 
-                path: "Sources",
-                publicHeadersPath: "Sources",
-                cSettings: [
-                    .headerSearchPath("Sources")
-                ])
+                path: "Sources"//,
+                //publicHeadersPath: "Sources",
+                //cSettings: [ .headerSearchPath("Sources") ]
+            )
     ],
     swiftLanguageVersions: [
         .version("5")
