@@ -1,6 +1,0 @@
-framework module FlexLayout {
-    header "YGValue.h"
-    header "YGEnums.h"
-    header "Yoga.h"
-    header "YGMacros.h"
-}

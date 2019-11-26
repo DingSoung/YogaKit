@@ -1,24 +1,37 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.0
 
 import PackageDescription
 
 let package = Package(
-    name: "YogaLayout",
+    name: "YogaKit",
     platforms: [
         .iOS(.v8)
     ],
     products: [
-        .library(name: "YogaLayout", targets: ["YogaLayout"])
+        .library(name: "YogaKit", 
+                type: .static,
+                targets: ["YogaKit"]
+        )
+    ],
+    dependencies: [
     ],
     targets: [
-        .target(name: "YogaLayout", 
+        .target(name: "YogaKit",
                 path: "Sources",
-                publicHeadersPath: "../Sources/publicHeader"
-                //cSettings: [ .headerSearchPath("Sources") ]
-            )
+                exclude: [
+                ],
+                sources: ["Core"],
+                publicHeadersPath: "Core/include",
+                cSettings: [ 
+                    .headerSearchPath("Core/yoga"),
+                    .headerSearchPath("Core/event"),
+                    .headerSearchPath("Core/internal")
+                ]
+        )
     ],
     swiftLanguageVersions: [
         .version("5")
     ],
-    cxxLanguageStandard: .cxx14
+    cLanguageStandard: .gnu11,
+    cxxLanguageStandard: .gnucxx14
 )
