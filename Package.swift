@@ -13,20 +13,20 @@ let package = Package(
                 targets: ["YogaKit"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+    ],
     targets: [
         .target(name: "YogaKit",
                 path: "Sources",
-                exclude: [],
+                exclude: [
+                ],
                 sources: ["Core", "Dependencies/OneDependency/OneDependency.m"],
-                publicHeadersPath: "Core/include"
-                /*
+                publicHeadersPath: "Core/include",
                 cSettings: [ 
-                    //.headerSearchPath("yoga"),
-                    //.headerSearchPath("Sources/internal"),
-                    //.headerSearchPath("Sources/event")
+                    .headerSearchPath("Core/yoga"),
+                    .headerSearchPath("Core/event"),
+                    .headerSearchPath("Core/internal")
                 ]
-                */
         )
     ],
     swiftLanguageVersions: [
