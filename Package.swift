@@ -19,10 +19,10 @@ let package = Package(
                 path: "Sources",
                 exclude: [],
                 sources: ["Core", "Dependencies/OneDependency/OneDependency.m"],
-                publicHeadersPath: "Core"
+                publicHeadersPath: "Core/include"
                 /*
                 cSettings: [ 
-                    .headerSearchPath("yoga"),
+                    //.headerSearchPath("yoga"),
                     //.headerSearchPath("Sources/internal"),
                     //.headerSearchPath("Sources/event")
                 ]
