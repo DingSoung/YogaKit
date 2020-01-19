@@ -7,6 +7,8 @@
 
 #pragma once
 
+@import Foundation;
+
 #include "../yoga/Yoga.h"
 #include "../yoga/YGMacros.h"
 #include "../yoga/YGValue.h"

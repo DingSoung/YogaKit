@@ -5,7 +5,10 @@ import PackageDescription
 let package = Package(
     name: "YogaKit",
     platforms: [
-        .iOS(.v8)
+	    .macOS(.v10_10),
+        .iOS(.v8),
+        .tvOS(.v9),
+        .watchOS(.v2)
     ],
     products: [
         .library(name: "YogaKit", 
@@ -13,13 +16,11 @@ let package = Package(
                 targets: ["YogaKit"]
         )
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
         .target(name: "YogaKit",
                 path: "Sources",
-                exclude: [
-                ],
+                exclude: [],
                 sources: ["Core"],
                 publicHeadersPath: "Core/include",
                 cSettings: [ 
