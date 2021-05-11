@@ -1,12 +1,12 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.4
 
 import PackageDescription
 
 let package = Package(
     name: "YogaKit",
     platforms: [
-	    .macOS(.v10_10),
-        .iOS(.v8),
+	.macOS(.v10_10),
+        .iOS(.v9),
         .tvOS(.v9),
         .watchOS(.v2)
     ],
